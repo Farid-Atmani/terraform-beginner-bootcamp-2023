@@ -241,4 +241,6 @@ If you lose this file, you **lose knowning the state of your infrastructure**.
 #### Terraform Directory
 `.terraform` directory contains binaries of terraform providers.
 
+### Bucket Naming Rules
 
+We changed the random string to match the bucket naming rules  (lower case...)
