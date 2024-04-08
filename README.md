@@ -264,3 +264,6 @@ The temporary generated token to access the Terraform Cloud to store the terrafo
 ```
 
 The token can be generated from Trreaform Cloud:: [Terreform Cloud Token](https://app.terraform.io/app/settings/tokens?source=terraform-login)
+
+
+We have automated this workaround with the following bash script [bin/generate_tfrc_credentials](We have automated this workaround with the following bash script bin/generate_tfrc_credentials)
