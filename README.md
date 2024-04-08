@@ -244,3 +244,23 @@ If you lose this file, you **lose knowning the state of your infrastructure**.
 ### Bucket Naming Rules
 
 We changed the random string to match the bucket naming rules  (lower case...)
+
+### Terraform Cloud Credentials File Path
+
+The temporary generated token to access the Terraform Cloud to store the terraform state file are stored in the follwing file in Gitpod:
+
+```sh
+/home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+```json
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR-TERRAFORM-CLOUD-TOKEN"
+    }
+  }
+}
+```
+
+The token can be generated from Trreaform Cloud:: [Terreform Cloud Token](https://app.terraform.io/app/settings/tokens?source=terraform-login)
