@@ -133,3 +133,24 @@ module "terrahouse_aws" {
 ```
 
 [Module Sources](https://developer.hashicorp.com/terraform/language/modules/sources)
+
+
+## Considerations when using ChatGPT to write Terraform
+LLMs such as ChatGPT may not be trained on the latest documentation or information about Terraform.
+
+It is likely to produce older examples that may be deprecated. Often affects providers.
+
+## Working with Files in Terraform
+
+### File exists function
+
+This is a built in terraform function to check the existance of a file.
+
+```tf
+condition = fileexists(var.error_html_filepath)
+```
+https://developer.hashicorp.com/terraform/language/functions/fileexists
+
+### Filemd5
+
+https://developer.hashicorp.com/terraform/language/functions/filemd5
